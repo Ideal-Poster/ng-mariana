@@ -1,0 +1,94 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.side-A,
+.side-B {
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.title {
+  font-size: 56px;
+  font-family: RomanaT;
+  padding-bottom: 20px;
+}
+
+.portrait {
+  width: 300px;
+  height: 300px;
+}
+.md-form input {
+  margin-top: -20px;
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 44px;
+  }
+}
+
+.form-gradient .font-small {
+  font-size: 0.8rem;
+}
+
+.form-gradient .header {
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+.form-gradient input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: 0 1px 0 0 white;
+  box-shadow: 0 1px 0 0 white;
+}
+
+.form-gradient input[type=text]:focus:not([readonly])+label {
+  color: #4f4f4f;
+}
+
+.form-gradient input[type=email]:focus:not([readonly]) {
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: 0 1px 0 0 white;
+  box-shadow: 0 1px 0 0 white;
+}
+
+.form-gradient input[type=email]:focus:not([readonly])+label {
+  color: #4f4f4f;
+}
+
+.form-gradient input[type=message]:focus:not([readonly]) {
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: 0 1px 0 0 white;
+  box-shadow: 0 1px 0 0 white;
+}
+
+.form-gradient textarea.md-textarea:focus:not([readonly])+label {
+  color: #4f4f4f;
+}
+
+.form-gradient textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid white;
+  -webkit-box-shadow: 0 1px 0 0 white;
+  box-shadow: 0 1px 0 0 white;
+}
+
+.form-gradient input[type=message]:focus:not([readonly])+label {
+  color: #4f4f4f;
+}
+
+.side-A,
+.side-B {
+  padding-bottom: 60px;
+}
+
+
+@media (max-width: 576px) {
+  .side-A,
+  .side-B {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

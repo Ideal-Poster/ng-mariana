@@ -1,0 +1,56 @@
+<!-- <div class="canvas-1 d-none d-lg-block">
+</div>
+<div class="canvas-2 d-none d-lg-block">
+
+</div> -->
+<div class="container">
+  <div class="row" style="padding-top: 10vh;">
+    <div class="col-lg-6">
+      <div class="side-A">
+        <div class="flex-center flex-column">
+          <img class="portrait" src="../../assets/images/contact-image.jpg" alt="Image">
+          <p style="padding-top: 25px;" class="description">HLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+            Lorem
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="side-B">
+        <section class="form-gradient">
+          <h1 class="title" style="margin-top: -20px;">Contact</h1>
+          <!--Form without header-->
+          <form [formGroup]="contactForm">
+            <div class="md-form">
+              <input type="text" id="form100" formControlName="name" data-success="success" data-error="invalid" class="form-control" mdbInputDirective>
+              <label for="form100">Your name</label>
+            </div>
+
+            <div class="md-form">
+              <input type="text" id="form101" formControlName="email" data-success="success" data-error="invalid" class="form-control" mdbInputDirective>
+              <label for="form101">Your email</label>
+            </div>
+
+            <div class="md-form text-left">
+              <textarea type="text" id="messgae" formControlName="message" data-success="success" data-error="invalid" class="md-textarea form-control" rows="5" length="500" mdbCharCounter mdbInputDirective></textarea>
+
+              <label for="form103">Your message</label>
+            </div>
+
+            <div class="row d-flex mx-auto align-items-center">
+                <button type="button" [disabled]="!formValid" (click) = "saveMessage()" class="btn btn-success btn-block btn-rounded z-depth-1">Send</button>
+
+            </div>
+            <!--Grid row-->
+          </form>
+          <!--/Form without header-->
+
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

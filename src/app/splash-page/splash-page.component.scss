@@ -1,0 +1,55 @@
+:host {
+  display: block;
+  background: url("../../assets/images/cover-image.jpg")no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  overflow: hidden;
+}
+
+.bkground {
+  display: block;
+  background: url("../../assets/images/cover-image.jpg")no-repeat 50% 50% fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  min-height: 100%;
+}
+
+.name {
+  font-family: RomanaT;
+  font-size: 107px;
+}
+
+.see-me-live {
+  font-size: 22.5px;
+  border: 2px solid rgb(247, 247, 247);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 8vh;
+  color: white;
+  transition: 0.15s;
+}
+
+.see-me-live:hover {
+  background: white;
+  color: #1E1E1E;
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+  .name {
+    font-size: 85px;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+  .mariana {
+    width: 800px;
+  }
+}

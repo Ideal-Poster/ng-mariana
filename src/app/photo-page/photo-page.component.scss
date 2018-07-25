@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  // background: #1F1F1F;
+  padding-top: 90px;
+  // padding-top: 86px;
+  overflow: hidden;
+}
+.title {
+  font-size: 56px;
+  font-family: RomanaT;
+  padding-bottom: 25px;
+  margin-top: -10px;
+}
+
+@media (min-width: 992px) {
+  :host {
+    text-align: right;
+  }
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 54px;
+  }
+}

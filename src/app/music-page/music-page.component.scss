@@ -1,0 +1,136 @@
+:host {
+  display: block;
+  // min-height: 100vh;
+  // overflow: scroll;
+
+}
+
+.background-color {
+  background: #485a6d;
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -100;
+  -webkit-transition-property: background;
+  /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-property: background;
+  transition-duration: 1s;
+}
+
+.background-image {
+  width:100vw;
+  position: absolute;
+  background: url("../../assets/images/music-background.png")no-repeat 40% 60%;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  min-height: 100vh;
+  max-height: 740px;
+  padding-top: 90px;
+  z-index: -22;
+}
+
+.title {
+  font-family: RomanaT;
+  font-size: 68px;
+  min-height: 90px;
+}
+
+.description {
+  position: relative;
+  top: -75px;
+  left: 80px;
+  line-height: 22px;
+}
+
+.band-description {
+  font-size: 24px;
+  position: relative;
+}
+
+.nav-item {
+  color: #868585;
+  // width: 155px;
+  // background: blue;
+  margin-right: 10px;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.navbar-nav {
+  position: relative;
+  left: -30px;
+}
+.project-padding {
+  margin-left: 10%;
+  position: relative;
+  top: -18px;
+  right: -60px;
+}
+.navbar-toggle {
+  color: white;
+}
+a.navbar-mobile {
+  background: transparent;
+  color: grey;
+  border: none;
+  font-size: 24px;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin-left: -15px;
+}
+.navbar-light {
+  color: grey;
+}
+// .active {
+//   color: aliceblue;
+// }
+@media (max-width: 575px) {
+  .background-color {
+    min-height: 0;
+    position: fixed;
+    height: 100vh;
+  }
+  .mobile {
+    margin-top: -50px;
+  }
+}
+
+@media (min-height: 768px) {
+  .background-image {
+    display: block;
+    min-height: 770px;
+  }
+}
+@media (max-width: 769px) {
+  .description {
+    top: 0px;
+    left: 0px;
+    line-height: 22px;
+  }
+  .navbar-nav {
+    left: 0px;
+  }
+  .project-padding {
+    margin-left: 0;
+    top: 0;
+    right: 0;
+  }
+}
+@media (max-width: 991px) {
+  .project-padding {
+    margin-left: 0;
+  }
+  .title {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 1200px) {
+
+}

@@ -1,0 +1,87 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  padding-top: 80px;
+  width: 100vw;
+}
+.event > * {
+ color: white;
+}
+.event {
+  padding-bottom: 10px;
+}
+.event:hover {
+  .event-date {
+    margin-right: 85px;
+    margin-left: 85px;
+    color: #1d1d1d;
+    background: white;
+  }
+}
+.event-date {
+  max-width: 75px;
+  width: 75px;
+  height: 75px;
+  border: 2px solid white;
+  color: white;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.5s;
+  line-height: 1.2;
+  // transition-timing-function: ease;
+}
+.band-name {
+  font-size: 48px;
+  // line-height: 1;
+  letter-spacing: 1.5px;
+}
+.venue {
+  font-size: 35px;
+  border-bottom: 2px solid white;
+  // width: 200px;
+  display: inline-block;
+  line-height: 1.444;
+  letter-spacing: 1.5px;
+}
+.location {
+  font-size: 22.5px;
+  line-height: 1.2;
+
+}
+.banner {
+  padding-bottom: 40px;
+  font-size: 64px;
+  font-family: RomanaT;
+
+}
+.right-side {
+  margin-top: -12px;
+}
+
+
+@media (max-width: 992px) {
+  .band-name {
+    margin-top: -14px;
+  }
+  .venue {
+    margin-top: -4px;
+  }
+}
+
+
+// Large devices (desktops, 992px and down)
+@media (max-width: 1200px) {
+  .event-date {
+    width: 200px;
+    height: 75px;
+    // background: blue;
+  }
+  .band-name {
+    font-size: 43px;
+  }
+  .venue {
+
+  }
+ }

@@ -1,0 +1,19 @@
+
+:host {
+  display: block;
+  background: #1D1D1D;
+}
+@font-face {
+  font-family: "RomanaT";
+  src: url("../assets/fonts/RomanaT.ttf")
+}
+@font-face {
+  font-family: "Radnika-LightCondensed";
+  src: url("../assets/fonts/Radnika-LightCondensed.ttf")
+}
+* {
+}
+/deep/body {
+  font-family: Radnika-LightCondensed;
+  color: rgb(247, 247, 247);
+}
