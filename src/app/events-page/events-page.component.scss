@@ -52,27 +52,24 @@
 }
 .banner {
   padding-bottom: 40px;
-  font-size: 64px;
+  font-size: 68px;
   font-family: RomanaT;
-
 }
 .right-side {
   margin-top: -12px;
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .band-name {
     margin-top: -14px;
   }
   .venue {
     margin-top: -4px;
   }
-}
-
-
-// Large devices (desktops, 992px and down)
-@media (max-width: 1200px) {
+  .banner {
+    font-size: 54px;
+  }
   .event-date {
     width: 200px;
     height: 75px;
@@ -81,7 +78,22 @@
   .band-name {
     font-size: 43px;
   }
-  .venue {
+  // .venue {
+  //   font-size: 43px;
+  // }
+}
 
-  }
- }
+// Large devices (desktops, 992px and down)
+// @media (max-width: 1200px) {
+//   .event-date {
+//     width: 200px;
+//     height: 75px;
+//     // background: blue;
+//   }
+//   .band-name {
+//     font-size: 43px;
+//   }
+//   .venue {
+//     font-size: 43px;
+//   }
+//  }
