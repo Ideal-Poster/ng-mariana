@@ -40,16 +40,24 @@
   color: #1E1E1E;
 }
 
+@media (max-width: 576px) {
+  .name-block {
+    margin-top: -54px;
+  }
+}
+
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991px) {
   .name {
-    font-size: 85px;
+    font-size: 68px;
+    // top: -40px;
   }
+
 }
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199px) {
-  .mariana {
-    width: 800px;
-  }
+  // .mariana {
+  //   width: 800px;
+  // }
 }

@@ -52,8 +52,9 @@ import { Component } from '@angular/core';
 			position: relative;
 		}
     .nav-item > a {
+			right: -8px;
       padding-right: 50px;
-			color: #868585;
+			color: dimgrey;
     }
     .nav-item > a:hover {
       color: white;

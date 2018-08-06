@@ -1,20 +1,45 @@
 <div class="container">
   <h2 class="banner">Live Events</h2>
-  <div *ngFor="let event of events; let i = index;">
-    <a href="">
-      <div class="d-flex justify-content-center event">
-        <div class="text-right left-side">
-          <h2 class="band-name">Smoke and Sugar</h2>
-        </div>
-        <div class="event-date">
-          9 <br> Fri <br> Jan
-        </div>
-        <div class="right-side">
-            <h2 class="venue">Interglow</h2>
-            <p class="location">393 NYC 393 Broadway New York, NY, 10013</p>
+  <div class="d-flex justify-content-center" *ngFor="let event of events; let i = index;">
+    <div class="row">
+      <div class="col-md-12 event">
+        <div class="row">
+          <div class="text-right left-side d-none d-md-block">
+            <h4 class="band-name">{{ event.group }}</h4>
+          </div>
+          <div class="event-date">
+            {{ event.dayNum }}
+            <br> {{ event.day }}
+            <br> {{ event.month }}
+          </div>
+          <div class="right-side">
+              <h4 class="band-name d-block d-md-none">{{ event.group }}</h4>
+
+            <h2 class="venue">{{ event.venue }}</h2>
+            <p class="location">{{ event.location }}</p>
+          </div>
         </div>
       </div>
-    </a>
+    </div>
   </div>
 </div>
 
+<!-- <div class="container">
+    <h2 class="banner">Live Events</h2>
+    <div *ngFor="let event of events; let i = index;">
+      <a href="">
+        <div class="d-flex justify-content-center event">
+          <div class="text-right left-side">
+            <h2 class="band-name">Smoke and Sugar</h2>
+          </div>
+          <div class="event-date">
+            9 <br> Fri <br> Jan
+          </div>
+          <div class="right-side">
+              <h2 class="venue">Interglow</h2>
+              <p class="location">393 NYC 393 Broadway New York, NY, 10013</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div> -->

@@ -13,26 +13,42 @@ export class MusicPageComponent {
   groups = [
     {
       name: 'Smoke & Sugar',
-      description: `Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Nullam pellentesque mauris sed sem faucibus
-      nec rutrum purus feugiat. Duis vel eleifend diam. Suspendisse
-      sodales ipsum sed ligula porttitor rhoncus. Cras quis vulputate
-      ipsum. Maecenas blandit metus massa, at elementum mauris`,
-      albumArt: '../../assets/images/smoke-and-sugar/album-art.jpg',
-      groupPhoto: '../../assets/images/smoke-and-sugar/photo.jpg',
+      description: `Smoke and Sugar is a New York City based 5 person band.
+        We fuse funk, soul, jazz and rock together to bring you that perfect
+        balance on smoke and sugar.`,
+      image1: '../../assets/images/smoke-and-sugar/image-1.jpg',
+      image2: '../../assets/images/smoke-and-sugar/image-2.jpg',
       selector: 0,
       color: '#485A6D'
     },
     {
-      name: 'The Lovelace Band',
-      description: `Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit. Nullam pellentesque mauris sed sem faucibus
-      nec rutrum purus feugiat. Duis vel eleifend diam. Suspendisse
-      sodales ipsum sed ligula porttitor rhoncus. Cras quis vulputate
-      ipsum. Maecenas blandit metus massa, at elementum mauris`,
-      albumArt: '../../assets/images/lovelace-band/album-art.jpg',
-      groupPhoto: '../../assets/images/lovelace-band/photo.jpg',
+      name: 'SYBLING',
+      description: `SYBLING is a New York City based band with sisters Alice and Mari.`,
+      image1: '../../assets/images/SYBLING/image-1.jpg',
+      image2: '../../assets/images/SYBLING/image-2.jpg',
       selector: 1,
+      color: '#736E49'
+    },
+    {
+      name: 'The Lovelace Band',
+      description: `The Lovelace Band is a Manhattan-based ensemble
+        that plays jazz, blues, funk, bossa nova & lounge music,
+        imminently available for parties, events, weddings,
+        and back-alley honky-tonks`,
+      image1: '../../assets/images/lovelace-band/image-1.jpg',
+      image2: '../../assets/images/lovelace-band/image-2.jpg',
+      selector: 2,
+      color: '#736E49'
+    },
+    {
+      name: 'Vibe Mosaic',
+      description: `The Lovelace Band is a Manhattan-based ensemble
+        that plays jazz, blues, funk, bossa nova & lounge music,
+        imminently available for parties, events, weddings,
+        and back-alley honky-tonks`,
+      image1: '../../assets/images/lovelace-band/image-1.jpg',
+      image2: '../../assets/images/lovelace-band/image-2.jpg',
+      selector: 3,
       color: '#736E49'
     }
   ];

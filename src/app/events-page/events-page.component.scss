@@ -12,28 +12,32 @@
 }
 .event:hover {
   .event-date {
-    margin-right: 85px;
-    margin-left: 85px;
+    margin-right: 50px;
+    margin-left: 50px;
     color: #1d1d1d;
     background: white;
+  }
+  .location {
+    color: white;
   }
 }
 .event-date {
   max-width: 75px;
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
   border: 2px solid white;
   color: white;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
   padding-left: 14px;
-  padding-top: 5px;
-  transition: 0.5s;
+  padding-top: 1px;
+  transition: 0.4s;
   line-height: 1.2;
   // transition-timing-function: ease;
 }
 .band-name {
-  font-size: 48px;
+  padding-top: 12px;
+  font-size: 35px;
   // line-height: 1;
   letter-spacing: 1.5px;
 }
@@ -46,54 +50,63 @@
   letter-spacing: 1.5px;
 }
 .location {
-  font-size: 22.5px;
+  font-size: 18px;
   line-height: 1.2;
-
+  color: dimgrey;
+  transition-property: color;
 }
+
+.left-side, .right-side {
+  width: 300px;
+}
+
 .banner {
-  padding-bottom: 40px;
-  font-size: 68px;
+  font-size: 54px;
   font-family: RomanaT;
+  padding-bottom: 40px;
 }
-.right-side {
-  margin-top: -12px;
-}
-
 
 @media (max-width: 991px) {
-  .band-name {
-    margin-top: -14px;
+  .left-side, .right-side {
+    width: 250px;
   }
+  // .band-name {
+  //   font-size: 28px;
+  // }
   .venue {
-    margin-top: -4px;
+    font-size: 28px;
+  }
+  .location {
+    font-size: 16px;
+  }
+  .band-name {
+    font-size: 28px;
   }
   .banner {
-    font-size: 54px;
+    font-size: 46px;
+  }
+
+ }
+
+
+
+
+ @media (max-width: 767px) {
+  .left-side, .right-side {
+    // width: 10px;
   }
   .event-date {
-    width: 200px;
-    height: 75px;
-    // background: blue;
+    margin-top: 20px;
   }
-  .band-name {
-    font-size: 43px;
+  .event {
+    width: 450px;
   }
-  // .venue {
-  //   font-size: 43px;
-  // }
-}
+  .event:hover {
+    .event-date {
+      margin-right: 50px;
+      margin-left: 40px;
+    }
+  }
 
-// Large devices (desktops, 992px and down)
-// @media (max-width: 1200px) {
-//   .event-date {
-//     width: 200px;
-//     height: 75px;
-//     // background: blue;
-//   }
-//   .band-name {
-//     font-size: 43px;
-//   }
-//   .venue {
-//     font-size: 43px;
-//   }
-//  }
+
+ }
