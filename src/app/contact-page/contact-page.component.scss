@@ -2,7 +2,9 @@
   display: block;
   min-height: 100vh;
 }
-
+.container {
+  padding-top: 80px;
+}
 .side-A,
 .side-B {
   padding-top: 20px;
@@ -98,4 +100,5 @@
   .portrait {
     margin-top: -54px;
   }
+
 }

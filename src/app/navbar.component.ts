@@ -13,8 +13,8 @@ import { Component } from '@angular/core';
 						<a routerLink="/" class="nav-link" routerLinkActive="text-white" [routerLinkActiveOptions]="{ exact: true }">Home</a>
 						<a routerLink="/events" class="nav-link" routerLinkActive="text-white">Events</a>
 						<a routerLink="/music" class="nav-link" routerLinkActive="text-white">Music</a>
-						<a routerLink="/gallery" class="nav-link" routerLinkActive="text-white" >Gallery</a>
-						<a routerLink="/contact" class="nav-link" routerLinkActive="text-white" >Gallery</a>
+						<a routerLink="/gallery" class="nav-link" routerLinkActive="text-white">Gallery</a>
+						<a routerLink="/contact" class="nav-link" routerLinkActive="text-white">Contact</a>
 					</div>
 			</links>
 	</mdb-navbar>
