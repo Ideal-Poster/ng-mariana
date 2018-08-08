@@ -29,7 +29,7 @@ export class MusicPageComponent {
       image1: '../../assets/images/SYBLING/image-1.jpg',
       image2: '../../assets/images/SYBLING/image-2.jpg',
       selector: 1,
-      color: '#565374',
+      color: '#615a70',
       linkName: 'Soundcloud',
       link: 'https://soundcloud.com/sybling'
     },
@@ -42,7 +42,7 @@ export class MusicPageComponent {
       image1: '../../assets/images/lovelace-band/image-1.jpg',
       image2: '../../assets/images/lovelace-band/image-2.jpg',
       selector: 2,
-      color: '#6f6a49',
+      color: '#6b6851',
       linkName: 'Website',
       link: 'https://www.klovelacemusic.com/'
     },
