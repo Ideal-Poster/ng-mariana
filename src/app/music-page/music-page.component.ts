@@ -42,7 +42,7 @@ export class MusicPageComponent {
       image1: '../../assets/images/lovelace-band/image-1.jpg',
       image2: '../../assets/images/lovelace-band/image-2.jpg',
       selector: 2,
-      color: '#6b6851',
+      color: '#6a664d',
       linkName: 'Website',
       link: 'https://www.klovelacemusic.com/'
     },
