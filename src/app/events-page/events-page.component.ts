@@ -27,9 +27,30 @@ export class EventsPageComponent {
       group: 'Smoke and Sugar',
       venue: 'The Groove',
       location: '125 Macdougal St A, New York, NY 10012',
-      day: 'Thur\'s',
-      dayNum: '',
-      month: ''
+      day: 'Thur',
+      dayNum: '6',
+      month: 'Sept'
+    },    {
+      group: 'Smoke and Sugar',
+      venue: 'The Groove',
+      location: '125 Macdougal St A, New York, NY 10012',
+      day: 'Thur',
+      dayNum: '13',
+      month: 'Sept'
+    },    {
+      group: 'Smoke and Sugar',
+      venue: 'The Groove',
+      location: '125 Macdougal St A, New York, NY 10012',
+      day: 'Thur',
+      dayNum: '20',
+      month: 'Sept'
+    },    {
+      group: 'Smoke and Sugar',
+      venue: 'The Groove',
+      location: '125 Macdougal St A, New York, NY 10012',
+      day: 'Thur',
+      dayNum: '27',
+      month: 'Sept'
     }
   ];
 

@@ -23,3 +23,9 @@
     font-size: 45px;
   }
 }
+
+@media (max-width: 575px) {
+  .title {
+    margin-top: -54px;
+  }
+}

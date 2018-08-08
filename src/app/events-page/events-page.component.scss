@@ -2,14 +2,18 @@
   display: block;
   min-height: 100vh;
   padding-top: 80px;
+  padding-bottom: 80px;
   width: 100vw;
 }
-.event > * {
- color: white;
+
+.event>* {
+  color: white;
 }
+
 .event {
   padding-bottom: 10px;
 }
+
 .event:hover {
   .event-date {
     margin-right: 50px;
@@ -21,6 +25,7 @@
     color: white;
   }
 }
+
 .event-date {
   max-width: 75px;
   width: 65px;
@@ -32,23 +37,23 @@
   padding-left: 14px;
   padding-top: 1px;
   transition: 0.4s;
-  line-height: 1.2;
-  // transition-timing-function: ease;
+  line-height: 1.2; // transition-timing-function: ease;
 }
+
 .band-name {
   padding-top: 12px;
-  font-size: 35px;
-  // line-height: 1;
+  font-size: 35px; // line-height: 1;
   letter-spacing: 1.5px;
 }
+
 .venue {
   font-size: 35px;
-  border-bottom: 2px solid white;
-  // width: 200px;
+  border-bottom: 2px solid white; // width: 200px;
   display: inline-block;
   line-height: 1.444;
   letter-spacing: 1.5px;
 }
+
 .location {
   font-size: 18px;
   line-height: 1.2;
@@ -56,8 +61,16 @@
   transition-property: color;
 }
 
-.left-side, .right-side {
+.left-side,
+.right-side {
   width: 300px;
+}
+
+.left-side {
+  margin-top: -6px;
+}
+.right-side {
+  margin-top: -14px;
 }
 
 .banner {
@@ -67,10 +80,10 @@
 }
 
 @media (max-width: 991px) {
-  .left-side, .right-side {
+  .left-side,
+  .right-side {
     width: 250px;
-  }
-  // .band-name {
+  } // .band-name {
   //   font-size: 28px;
   // }
   .venue {
@@ -85,14 +98,14 @@
   .banner {
     font-size: 46px;
   }
+  .right-side {
+    margin-top: -6px;
+  }
+}
 
- }
-
-
-
-
- @media (max-width: 767px) {
-  .left-side, .right-side {
+@media (max-width: 767px) {
+  .left-side,
+  .right-side {
     // width: 10px;
   }
   .event-date {
@@ -107,6 +120,16 @@
       margin-left: 40px;
     }
   }
+  .left-side {
+    margin-top: 0px;
+  }
+  .right-side {
+    margin-top: 0px;
+  }
+}
 
-
- }
+@media (max-width: 575px) {
+  .banner {
+    margin-top: -54px;
+  }
+}

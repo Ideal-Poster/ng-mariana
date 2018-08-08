@@ -9,11 +9,12 @@
       <div class="side-A">
         <div class="flex-center flex-column">
           <img class="portrait" src="../../assets/images/contact-image.jpg" alt="Image">
-          <p style="padding-top: 25px;" class="description">HLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-            a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-            Lorem
+          <p style="padding-top: 25px;" class="description">
+            Mari QM (Mariana Quinn-Makwaia) is a mixed race vocalist, composer, actor and teacher. She embraces fusion and often blends
+            soul, jazz, rock and electronic influences with a nod to improvisation. Born and raised in the LES of NYC to
+            an artistic family she continues to play with foundations of song, narrative and performance today. Currently,
+            she fronts the neo-soul group 'Smoke and Sugar', joins her sister with the chamber folk group 'SYBLING', and
+            revamps the jazz standards with 'The Lovelace Band'. Check out Mari QM on Spotify to find more of her features!
           </p>
         </div>
       </div>
@@ -31,18 +32,20 @@
             </div>
 
             <div class="md-form">
-              <input type="text" id="form101" formControlName="email" data-success="success" data-error="invalid" class="form-control" mdbInputDirective>
+              <input type="text" id="form101" formControlName="email" data-success="success" data-error="invalid" class="form-control"
+                mdbInputDirective>
               <label for="form101">Your email</label>
             </div>
 
             <div class="md-form text-left">
-              <textarea type="text" id="messgae" formControlName="message" data-success="success" data-error="invalid" class="md-textarea form-control" rows="5" length="500" mdbCharCounter mdbInputDirective></textarea>
+              <textarea type="text" id="messgae" formControlName="message" data-success="success" data-error="invalid" class="md-textarea form-control"
+                rows="5" length="500" mdbCharCounter mdbInputDirective></textarea>
 
               <label for="form103">Your message</label>
             </div>
 
             <div class="row d-flex mx-auto align-items-center">
-                <button type="button" [disabled]="!formValid" (click) = "saveMessage()" class="btn btn-success btn-block btn-rounded z-depth-1">Send</button>
+              <button type="button" [disabled]="!formValid" (click)="saveMessage()" class="btn btn-success btn-block btn-rounded z-depth-1">Send</button>
 
             </div>
             <!--Grid row-->

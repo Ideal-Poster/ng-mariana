@@ -2,10 +2,10 @@
   display: block;
   // min-height: 100vh;
   // overflow: scroll;
-
 }
 
 .background-color {
+  top: 0;
   background: #485a6d;
   height: 100vh;
   width: 100vw;
@@ -94,7 +94,7 @@ a.navbar-mobile {
 // .active {
 //   color: aliceblue;
 // }
-@media (max-width: 578px) {
+@media (max-width: 575px) {
   .background-color {
     min-height: 0;
     position: fixed;

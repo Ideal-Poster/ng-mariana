@@ -19,7 +19,9 @@ export class MusicPageComponent {
       image1: '../../assets/images/smoke-and-sugar/image-1.jpg',
       image2: '../../assets/images/smoke-and-sugar/image-2.jpg',
       selector: 0,
-      color: '#485A6D'
+      color: '#4a5e73',
+      linkName: 'Website',
+      link: 'https://www.smokeandsugarmusic.com'
     },
     {
       name: 'SYBLING',
@@ -27,7 +29,9 @@ export class MusicPageComponent {
       image1: '../../assets/images/SYBLING/image-1.jpg',
       image2: '../../assets/images/SYBLING/image-2.jpg',
       selector: 1,
-      color: '#736E49'
+      color: '#565374',
+      linkName: 'Soundcloud',
+      link: 'https://soundcloud.com/sybling'
     },
     {
       name: 'The Lovelace Band',
@@ -38,18 +42,19 @@ export class MusicPageComponent {
       image1: '../../assets/images/lovelace-band/image-1.jpg',
       image2: '../../assets/images/lovelace-band/image-2.jpg',
       selector: 2,
-      color: '#736E49'
+      color: '#6f6a49',
+      linkName: 'Website',
+      link: 'https://www.klovelacemusic.com/'
     },
     {
       name: 'Vibe Mosaic',
-      description: `The Lovelace Band is a Manhattan-based ensemble
-        that plays jazz, blues, funk, bossa nova & lounge music,
-        imminently available for parties, events, weddings,
-        and back-alley honky-tonks`,
-      image1: '../../assets/images/lovelace-band/image-1.jpg',
-      image2: '../../assets/images/lovelace-band/image-2.jpg',
+      description: `Contact Me to get in touch about potential collabs!`,
+      image1: '../../assets/images/vibe-mosaic/image-1.jpg',
+      image2: '../../assets/images/vibe-mosaic/image-2.jpg',
       selector: 3,
-      color: '#736E49'
+      color: '#4c6562',
+      linkName: 'Listen',
+      link: 'https://linktr.ee/vibemosaic'
     }
   ];
 
