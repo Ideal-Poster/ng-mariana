@@ -21,7 +21,8 @@ export class MusicPageComponent {
       selector: 0,
       color: '#4a5e73',
       linkName: 'Website',
-      link: 'https://www.smokeandsugarmusic.com'
+      link: 'https://www.smokeandsugarmusic.com',
+      instagram: 'https://www.instagram.com/smokeandsugarmusic/'
     },
     {
       name: 'SYBLING',
@@ -31,7 +32,8 @@ export class MusicPageComponent {
       selector: 1,
       color: '#615a70',
       linkName: 'Soundcloud',
-      link: 'https://soundcloud.com/sybling'
+      link: 'https://soundcloud.com/sybling',
+      instagram: 'https://www.instagram.com/syblingmusic/'
     },
     {
       name: 'The Lovelace Band',
@@ -44,7 +46,8 @@ export class MusicPageComponent {
       selector: 2,
       color: '#6a664d',
       linkName: 'Website',
-      link: 'https://www.klovelacemusic.com/'
+      link: 'https://www.klovelacemusic.com/',
+      instagram: ''
     },
     {
       name: 'Vibe Mosaic',
@@ -53,8 +56,9 @@ export class MusicPageComponent {
       image2: '../../assets/images/vibe-mosaic/image-2.jpg',
       selector: 3,
       color: '#4c6562',
-      linkName: 'Listen',
-      link: 'https://linktr.ee/vibemosaic'
+      linkName: 'Collab with Vibe Mosaic',
+      link: 'https://linktr.ee/vibemosaic',
+      instagram: 'https://www.instagram.com/mquinnmak/'
     }
   ];
 

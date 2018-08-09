@@ -14,13 +14,13 @@
             <a class="nav-link navbar-bands text-white" style="color:dimgrey" (click)="selector = 0; activeHighlight(0);">Smoke & Sugar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navbar-bands" style="color:dimgrey" (click)="selector = 1; activeHighlight(1);">Sybling</a>
+            <a class="nav-link navbar-bands" style="color:dimgrey" (click)="selector = 1; activeHighlight(1);">SYBLING</a>
           </li>
           <li class="nav-item">
             <a class="nav-link navbar-bands" style="color:dimgrey" (click)="selector = 2; activeHighlight(2);">Lovelace</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navbar-bands" style="color:dimgrey" (click)="selector = 3; activeHighlight(3);">Vibe Mosiac</a>
+            <a class="nav-link navbar-bands" style="color:dimgrey" (click)="selector = 3; activeHighlight(3);">Mari QM</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link navbar-bands" style="color:dimgrey" (click)="selector = 4; activeHighlight(4);">Jess Bet</a>
@@ -32,9 +32,9 @@
     <div class="mobile d-block d-md-none">
       <div class="list-group">
         <a class="list-group-item waves-light navbar-mobile text-white" (click)="selector = 0; activeHighlight(0);" mdbWavesEffect>Smoke & Sugar</a>
-        <a class="list-group-item waves-light navbar-mobile" (click)="selector = 1; activeHighlight(1);" mdbWavesEffect>Sybling</a>
+        <a class="list-group-item waves-light navbar-mobile" (click)="selector = 1; activeHighlight(1);" mdbWavesEffect>SYBLING</a>
         <a class="list-group-item waves-light navbar-mobile" (click)="selector = 2; activeHighlight(2);" mdbWavesEffect>Lovelace</a>
-        <a class="list-group-item waves-light navbar-mobile" (click)="selector = 3; activeHighlight(3);" mdbWavesEffect>Vibe Mosaic</a>
+        <a class="list-group-item waves-light navbar-mobile" (click)="selector = 3; activeHighlight(3);" mdbWavesEffect>Mari QM</a>
         <!-- <a class="list-group-item waves-light navbar-mobile" (click)="selector = 4; activeHighlight(4);" mdbWavesEffect>Jess Bet</a> -->
       </div>
     </div>
@@ -59,6 +59,11 @@
               <a href="{{ group.link }}" target="_blank" *ngIf="selector != 1">
                 <mdb-icon class="pl-2 pr-1 pb-1 text-white" icon="globe" size="lg"></mdb-icon>
                 <p style="display: inline-block" class="text-white pt-1">{{ group.linkName }}</p>
+              </a>
+
+              <a href="{{ group.instagram }}" target="_blank" *ngIf="selector != 2">
+                <mdb-icon class="pl-2 pr-1 pb-1 text-white" icon="instagram" size="lg"></mdb-icon>
+                <p style="display: inline-block" class="text-white pt-1">Instagram</p>
               </a>
             </div>
           </div>
