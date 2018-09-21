@@ -4,38 +4,13 @@ const path = require('path');
 
 const app = express();
 
-// Angular DIST output folder
-app.use(express.static(path.join(__dirname, 'dist')));
+// Serve only the static files form the dist directory
+app.use(express.static('./dist/mdb-angular-pro'));
 
+app.get('/*', function(req,res) {
 
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-    res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS');
-    next();
+res.sendFile(path.join(__dirname,'/dist/mdb-angular-pro/index.html'));
 });
 
-// Send all other requests to the Angular app
-app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'dist/index.html')));
-
-//Set Port
-const port = process.env.PORT || '3000';
-app.set('port', port);
-
-const server = http.createServer(app);
-
-server.listen(port, () => console.log(`Running on http://localhost:${port}/`));
-
-// catch 404 and forward to error handler
-app.use((req, res, next) => next(createError(404)));
-
-// error handler
-app.use((err, req, res, next) => {
-    // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};  // render the error page
-    res.status(err.status || 500);
-    res.render('error');
-});
-
-module.exports = app;
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
