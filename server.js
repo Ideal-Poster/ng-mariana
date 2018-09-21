@@ -7,9 +7,6 @@ const app = express();
 // Angular DIST output folder
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// API location
-app.use('/emailSub', emailSubRouter);
-app.use('/', indexRouter);
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
