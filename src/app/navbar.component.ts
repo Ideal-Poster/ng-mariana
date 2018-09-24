@@ -50,11 +50,14 @@ import { Component } from '@angular/core';
 			display:block;
 			z-index: 30;
 			position: relative;
+			// padding-top: 100px;
 		}
     .nav-item > a {
 			right: -8px;
       padding-right: 50px;
 			color: dimgrey;
+			padding-top: 15px;
+
     }
     .nav-item > a:hover {
       color: white;

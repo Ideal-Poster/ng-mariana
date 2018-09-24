@@ -102,3 +102,13 @@
   }
 
 }
+
+.email-link > p {
+  color: dimgrey;
+  margin-top: 5px;
+  transition-duration: 0.2s;
+}
+
+.email-link > p:hover {
+  color: white;
+}

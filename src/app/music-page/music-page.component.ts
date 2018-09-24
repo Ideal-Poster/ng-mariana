@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 // For MDB Angular Pro
 import { DropdownModule, WavesModule } from 'ng-uikit-pro-standard';
+import { fadeAnimation } from '../animations';
 
 @Component({
   // tslint:disable-next-line:component-selector
   selector: 'music-page',
   templateUrl: './music-page.component.html',
+  animations: [fadeAnimation],
   styleUrls: ['./music-page.component.scss']
 })
 export class MusicPageComponent {
