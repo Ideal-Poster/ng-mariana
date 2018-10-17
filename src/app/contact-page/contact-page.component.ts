@@ -1,6 +1,6 @@
 import { MessageService } from './../app.service';
 import { Observable } from 'rxjs';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, Renderer2 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AngularFirestore } from 'angularfire2/firestore';
 
@@ -19,7 +19,13 @@ export class ContactPageComponent implements OnInit {
   contactForm: FormGroup;
   formValid = false;
 
-  constructor(private db: AngularFirestore, private messageService: MessageService, private formBuilder: FormBuilder) {
+  constructor(
+    private db: AngularFirestore,
+    private messageService: MessageService,
+    private formBuilder: FormBuilder,
+    private _el: ElementRef,
+    private _r: Renderer2
+  ) {
 
   }
 
@@ -52,5 +58,25 @@ export class ContactPageComponent implements OnInit {
 
 
     // this.messageService.addMessage(message);
+    this.contactForm.reset();
+    this.contactForm.markAsUntouched();
+
+    const success = this._el.nativeElement.querySelectorAll('.counter-success');
+    const danger = this._el.nativeElement.querySelectorAll('.counter-danger');
+    const textSuccess = this._el.nativeElement.querySelectorAll('.text-success');
+    const textDanger = this._el.nativeElement.querySelectorAll('.text-danger');
+    success.forEach((element: any) => {
+        this._r.removeClass(element, 'counter-success');
+    });
+    danger.forEach((element: any) => {
+        this._r.removeClass(element, 'counter-danger');
+    });
+    textSuccess.forEach((element: any) => {
+        this._r.setStyle(element, 'visibility', 'hidden');
+    });
+    textDanger.forEach((element: any) => {
+        this._r.setStyle(element, 'visibility', 'hidden');
+    });
+    // form.reset();
   }
 }

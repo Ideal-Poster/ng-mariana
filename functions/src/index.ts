@@ -1,4 +1,4 @@
-import { API_KEY, DOMAIN } from './constants';
+import { API_KEY, DOMAIN } from '../lib/constants';
 import * as functions from 'firebase-functions';
 import * as mailgunjs from 'mailgun-js';
 
@@ -16,13 +16,14 @@ export const createMessage = functions.firestore
 
     // access a particular field as you would any JS property
     const name = newValue.name;
+    const message = newValue.message;
 
     // perform desired operations ...
     const data = {
       from: 'Excited User <me@samples.mailgun.org>',
-      to: 'malcolmgourdine@gmail.com, Ideal_Poster@mg.malcolmgourdine.com',
-      subject: 'Hello',
-      text: 'Testing some Mailgun awesomness!'
+      to: 'malcolmgourdine@gmail.com, mquinnmakwaia@gmail.com',
+      subject: ('Mariqmmusic message from ' + name),
+      text: message
     };
 
     mailgun.messages().send(data, (error, body) => {

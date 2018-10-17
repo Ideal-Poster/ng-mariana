@@ -40,3 +40,5 @@ Thumbs.db
 
 functions/node_modules/
 functions/src/constants.ts
+functions/lib/constants.js
+functions/lib/constants.js.map
