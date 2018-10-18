@@ -18,9 +18,9 @@ exports.createMessage = functions.firestore
     const message = newValue.message;
     // perform desired operations ...
     const data = {
-        from: 'Excited User <me@samples.mailgun.org>',
+        from: (name + ' <me@samples.mailgun.org>'),
         to: 'malcolmgourdine@gmail.com, mquinnmakwaia@gmail.com',
-        subject: ('Mariqmmusic message from ' + name),
+        subject: ('mariqmmusic.com message from ' + name),
         text: message
     };
     mailgun.messages().send(data, (error, body) => {

@@ -18,6 +18,7 @@ export class ContactPageComponent implements OnInit {
   // messages: Observable<any[]>;
   contactForm: FormGroup;
   formValid = false;
+  messageSent = false;
 
   constructor(
     private db: AngularFirestore,
@@ -43,7 +44,7 @@ export class ContactPageComponent implements OnInit {
       if (this.formValid !== this.contactForm.valid) {
         this.formValid = this.contactForm.valid;
       }
-      console.log(message);
+      // console.log(message);
     });
 
   }
@@ -57,7 +58,7 @@ export class ContactPageComponent implements OnInit {
     console.log(message);
 
 
-    // this.messageService.addMessage(message);
+    this.messageService.addMessage(message);
     this.contactForm.reset();
     this.contactForm.markAsUntouched();
 
@@ -77,6 +78,8 @@ export class ContactPageComponent implements OnInit {
     textDanger.forEach((element: any) => {
         this._r.setStyle(element, 'visibility', 'hidden');
     });
+
+    document.getElementById('title').innerHTML = 'Thank You! I\'ll get back to you soon';
     // form.reset();
   }
 }
