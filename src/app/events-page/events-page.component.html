@@ -3,21 +3,23 @@
   <div class="d-flex justify-content-center" *ngFor="let event of events; let i = index;">
     <div class="row">
       <div class="col-md-12 event">
-        <div class="row" style="padding-bottom: 14px;">
-          <div class="text-right left-side d-none d-md-block">
-            <h4 class="band-name">{{ event.group }}</h4>
+        <a href="{{event.link}}" target='_blank'>
+          <div class="row" style="padding-bottom: 14px;">
+            <div class="text-right left-side d-none d-md-block">
+              <h4 class="band-name">{{ event.group }}</h4>
+            </div>
+            <div class="event-date">
+                {{ event.dayNum }}
+              <br> {{ event.day }}
+              <br> {{ event.month }}
+            </div>
+            <div class="right-side">
+              <h4 class="band-name d-block d-md-none">{{ event.group }}</h4>
+              <h2 class="venue">{{ event.venue }}</h2>
+              <p class="location">{{ event.location }}</p>
+            </div>
           </div>
-          <div class="event-date">
-              {{ event.dayNum }}
-            <br> {{ event.day }}
-            <br> {{ event.month }}
-          </div>
-          <div class="right-side">
-            <h4 class="band-name d-block d-md-none">{{ event.group }}</h4>
-            <h2 class="venue">{{ event.venue }}</h2>
-            <p class="location">{{ event.location }}</p>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>

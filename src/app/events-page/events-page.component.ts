@@ -8,50 +8,52 @@ import { Component } from '@angular/core';
 export class EventsPageComponent {
   events = [
     {
-      group: 'The Lovelace Band',
-      venue: 'The Branded Saloon',
-      location: '603 Vanderbilt Ave, Brooklyn, NY 11238',
-      day: 'Fri',
+      group: 'Smoke and Sugar',
+      venue: 'Rockwood',
+      location: '169 Allen St New York, NY 10002',
+      day: 'Thur',
       dayNum: '10',
-      month: 'Aug'
+      month: 'Dec',
+      link: 'http://www.ticketfly.com/event/1783194'
     },
     {
-      group: 'The Lovelace Band',
-      venue: 'Bar 9',
-      location: '807 9th Ave, New York, NY 10019',
-      day: 'Sun',
-      dayNum: '2',
-      month: 'Sep'
-    },
-    {
-      group: 'Smoke and Sugar',
-      venue: 'The Groove',
-      location: '125 Macdougal St A, New York, NY 10012',
-      day: 'Thur',
-      dayNum: '6',
-      month: 'Sept'
-    },    {
-      group: 'Smoke and Sugar',
-      venue: 'The Groove',
-      location: '125 Macdougal St A, New York, NY 10012',
-      day: 'Thur',
-      dayNum: '13',
-      month: 'Sept'
-    },    {
-      group: 'Smoke and Sugar',
-      venue: 'The Groove',
-      location: '125 Macdougal St A, New York, NY 10012',
-      day: 'Thur',
-      dayNum: '20',
-      month: 'Sept'
-    },    {
-      group: 'Smoke and Sugar',
-      venue: 'The Groove',
-      location: '125 Macdougal St A, New York, NY 10012',
-      day: 'Thur',
-      dayNum: '27',
-      month: 'Sept'
+      group: 'Mari QM',
+      venue: 'Innerglow',
+      location: '154 Grand St, New York, NY 10013',
+      day: 'Wed',
+      dayNum: '19',
+      month: 'Dec',
+      link: 'http://bit.ly/innerglowholiday'
     }
+    // {
+    //   group: 'Smoke and Sugar',
+    //   venue: 'The Groove',
+    //   location: '125 Macdougal St A, New York, NY 10012',
+    //   day: 'Thur',
+    //   dayNum: '6',
+    //   month: 'Sept'
+    // },    {
+    //   group: 'Smoke and Sugar',
+    //   venue: 'The Groove',
+    //   location: '125 Macdougal St A, New York, NY 10012',
+    //   day: 'Thur',
+    //   dayNum: '13',
+    //   month: 'Sept'
+    // },    {
+    //   group: 'Smoke and Sugar',
+    //   venue: 'The Groove',
+    //   location: '125 Macdougal St A, New York, NY 10012',
+    //   day: 'Thur',
+    //   dayNum: '20',
+    //   month: 'Sept'
+    // },    {
+    //   group: 'Smoke and Sugar',
+    //   venue: 'The Groove',
+    //   location: '125 Macdougal St A, New York, NY 10012',
+    //   day: 'Thur',
+    //   dayNum: '27',
+    //   month: 'Sept'
+    // }
   ];
 
 
